@@ -64,7 +64,7 @@ if(lc($confirm) eq 'yes' || lc($confirm) eq 'y') {
 	system("cd $git/$input.git/hooks && chmod 755 post-update");	
 	
 	print ("Done.\n\nTo grab this project, run the following command:\n\n");
-	print ("     >  git clone ssh://root\@216.67.225.174:100$git/$input.git $input\n");
+	print ("     >  git clone ssh://[YOUR_SERVER_URL]$git/$input.git $input\n");
 	if(lc($rails) eq 'yes' || lc($rails) eq 'y') {
 		print("     >  cd $input && bundle install\n\n");
 	}
