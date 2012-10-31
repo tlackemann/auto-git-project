@@ -27,10 +27,10 @@ if(lc($confirm) eq 'yes' || lc($confirm) eq 'y') {
 		print "\nCreating new rails project '$input'...\n";
 		system("cd $www && rails new $input");
 	} else {
-		# Not a rails project so we'll just put in a blank php file for now
+		# Not a rails project so we'll just put in a blank readme file for now
 		print "\nCreating new folder '$input'...\n";
 		mkdir "$www/$input";
-		system("cd $www/$input && touch index.php");
+		system("cd $www/$input && touch README.md");
 	}
 
 	print "\nCreating git repository...\n";
